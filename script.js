@@ -1,11 +1,14 @@
-let nome;
-let ano;
-let idade;
+let nota1tri;
+let nota2tri;
+let resultado;
 
-console.log("Hello World.");
-alert("oi");
-nome = prompt("nome?");
-alert("bom dia, " + nome + ".");
-ano = Number(prompt(nome +  ", em que ano você nasceu?"));
-idade = 2026 - ano;
-alert(nome + ", você tem " + idade + " anos.");
+nota1tri = Number(prompt("Digire a nota do 1º trismestre"));
+nota2tri = Number(prompt("Digite a nota do 2º trismestre"));
+
+resultado = 180-(nota1tri+nota2tri);
+
+if(resultado <= 0){
+    alert("nos eh do angelo guço, vc paso. pabens")
+} else {
+    alert("nos do angelo guço nao pasou vc. tenta di novokk")
+}
